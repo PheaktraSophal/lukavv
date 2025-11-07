@@ -5,7 +5,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://loukav_user:46SzPBpfqVgAahmY3oEZI3exJsoUTh4p@dpg-d4719qngi27c73c3pctg-a.oregon-postgres.render.com/loukav'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+pg8000://loukav_user:46SzPBpfqVgAahmY3oEZI3exJsoUTh4p@dpg-d4719qngi27c73c3pctg-a.oregon-postgres.render.com/loukav'
 app.config['SECRET_KEY'] = '5bae2b11e01ff0c318ed744434506229b46a298c7e7ef52a2f3bb171130c65cf'
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     'pool_recycle': 300,
