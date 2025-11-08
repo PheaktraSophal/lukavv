@@ -267,16 +267,16 @@ def profile():
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'haktharoth18@gmail.com'
-app.config['MAIL_PASSWORD'] = 'bjbu yxgl hixz wriu'
+app.config['MAIL_USERNAME'] = 'pheaktrashophal@gmail.com'
+app.config['MAIL_PASSWORD'] = 'zyuz svin dxnx vbdm'
 app.config['SECRET_KEY'] = 'your-secret-key-change-this-in-production'
 
 mail = Mail(app)
 
 
 def send_order_to_telegram(message):
-    token = "7938087424:AAESzgCJ5UjfYpQlRu15Xayy7OTuVUaFYmE"
-    chat_id = "1239458595"
+    token = "7790994297:AAEzSs3rboQt_Z-SZoihuwhPY8e3P5100ro"
+    chat_id = "348033073"
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
